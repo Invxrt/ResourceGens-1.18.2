@@ -1,0 +1,17 @@
+{
+  "item.resourcegens.tier1catalyst": "Tier 1 Catalyst",
+  "item.resourcegens.tier2catalyst": "Tier 2 Catalyst",
+  "item.resourcegens.tier3catalyst": "Tier 3 Catalyst",
+  "item.resourcegens.tier1shard": "Tier 1 Shard",
+  "item.resourcegens.tier2shard": "Tier 2 Shard",
+  "item.resourcegens.tier3shard": "Tier 3 Shard",
+
+
+
+
+  "block.resourcegens.tier_1_generator": "Tier 1 Resource Generator",
+  "block.resourcegens.tier_2_generator": "Tier 2 Resource Generator",
+  "block.resourcegens.tier_3_generator": "Tier 3 Resource Generator",
+
+  "itemGroup.resourcegenstab": "Resource Generators"
+}

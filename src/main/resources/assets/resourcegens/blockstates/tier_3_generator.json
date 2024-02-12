@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "resourcegens:block/tier_3_generator" }
+  }
+}

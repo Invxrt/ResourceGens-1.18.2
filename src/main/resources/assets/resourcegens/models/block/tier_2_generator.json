@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "resourcegens:block/tier_2_generator"
+  }
+}
