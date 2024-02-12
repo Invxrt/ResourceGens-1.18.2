@@ -38,8 +38,6 @@ public class ResourceGens {
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
 
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
@@ -47,12 +45,13 @@ public class ResourceGens {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        MenuScreens.register(ModMenuTypes.TIER_1_GEN_MENU.get(), Tier1GenScreen::new);
     }
     private void clientSetup (final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TIER_1_GENERATOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TIER_2_GENERATOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TIER_3_GENERATOR.get(), RenderType.cutout());
 
-        MenuScreens.register(ModMenuTypes.TIER_1_GEN_MENU.get(), Tier1GenScreen::new);
+
     }
 }
