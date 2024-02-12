@@ -1,7 +1,11 @@
 package net.invxrt.resourcegens;
 
 import net.invxrt.resourcegens.block.ModBlocks;
+import net.invxrt.resourcegens.block.entity.ModBlockEntities;
 import net.invxrt.resourcegens.item.ModItems;
+import net.invxrt.resourcegens.screen.ModMenuTypes;
+import net.invxrt.resourcegens.screen.Tier1GenScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -29,8 +33,10 @@ public class ResourceGens {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-
+        ModBlockEntities.register(eventBus);
+        ModMenuTypes.register(eventBus);
         eventBus.addListener(this::setup);
+        eventBus.addListener(this::clientSetup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -46,5 +52,7 @@ public class ResourceGens {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TIER_1_GENERATOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TIER_2_GENERATOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TIER_3_GENERATOR.get(), RenderType.cutout());
+
+        MenuScreens.register(ModMenuTypes.TIER_1_GEN_MENU.get(), Tier1GenScreen::new);
     }
 }

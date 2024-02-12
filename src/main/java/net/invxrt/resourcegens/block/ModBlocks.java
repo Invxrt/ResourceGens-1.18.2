@@ -1,6 +1,7 @@
 package net.invxrt.resourcegens.block;
 
 import net.invxrt.resourcegens.ResourceGens;
+import net.invxrt.resourcegens.block.custom.Tier1GenBlock;
 import net.invxrt.resourcegens.item.ModCreativeModeTab;
 import net.invxrt.resourcegens.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -21,7 +22,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ResourceGens.MOD_ID);
 
 public static final RegistryObject<Block> TIER_1_GENERATOR = registerBlock("tier_1_generator",
-        () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+        () -> new Tier1GenBlock(BlockBehaviour.Properties.of(Material.METAL)
                 .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.RESOURCEGENS_TAB);
 
 public static final RegistryObject<Block> TIER_2_GENERATOR = registerBlock("tier_2_generator",
@@ -31,6 +32,8 @@ public static final RegistryObject<Block> TIER_2_GENERATOR = registerBlock("tier
 public static final RegistryObject<Block> TIER_3_GENERATOR = registerBlock("tier_3_generator",
         () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                 .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.RESOURCEGENS_TAB);
+
+
 
 
 
