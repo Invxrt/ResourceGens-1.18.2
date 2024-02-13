@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "resourcegens:tier_1_generator",
+    "resourcegens:tier_2_generator",
+    "resourcegens:tier_3_generator"
+  ]
+}

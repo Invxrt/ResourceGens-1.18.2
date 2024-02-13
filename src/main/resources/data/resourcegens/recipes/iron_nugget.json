@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DD ",
+    "  D",
+    "   "
+  ],
+  "key": {
+    "D": {
+      "item": "resourcegens:tier1shard"
+    }
+  },
+  "result": {
+    "item": "minecraft:iron_nugget",
+    "count": 3
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "D D",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "resourcegens:tier1shard"
+    }
+  },
+  "result": {
+    "item": "minecraft:redstone",
+    "count": 3
+  }
+}

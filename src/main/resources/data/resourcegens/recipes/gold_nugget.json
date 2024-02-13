@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "D": {
+      "item": "resourcegens:tier2shard"
+    }
+  },
+  "result": {
+    "item": "minecraft:coal",
+    "count": 3
+  }
+}
